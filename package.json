@@ -7,6 +7,7 @@
     "start": "yarn dev:start",
     "dev:start": "nodemon --ignore lib --exec babel-node src/server",
     "test": "eslint src && flow && jest --coverage",
+    "prod:build": "rimraf lib && babel src -d lib --ignore .test.js",
     "precommit": "yarn test",
     "prepush": "yarn test"
   },
