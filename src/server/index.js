@@ -11,7 +11,7 @@ const app = express()
 
 app.use(compression())
 app.use(STATIC_PATH, express.static('dist'))
-app.use(STATIC_PATH, express.static('distpublic'))
+app.use(STATIC_PATH, express.static('public'))
 
 app.get('/', (req, res) => {
   res.send(renderApp(APP_NAME))
