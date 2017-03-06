@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src && flow"
+    "test": "eslint src && flow && jest --coverage"
   },
   "dependencies": {},
   "devDependencies": {
