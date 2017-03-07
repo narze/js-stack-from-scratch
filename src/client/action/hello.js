@@ -1,5 +1,7 @@
 // @flow
 
+import 'isomorphic-fetch'
+
 import { createAction } from 'redux-actions'
 import { helloEndpointRoute } from '../../shared/routes'
 
