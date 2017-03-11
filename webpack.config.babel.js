@@ -22,8 +22,8 @@ export default {
         test: /\.(js|jsx)$/,
         use: 'babel-loader',
         exclude: /node_modules/,
-      }
-    ]
+      },
+    ],
   },
   devtool: isProd ? false : 'source-map',
   resolve: {
@@ -38,5 +38,5 @@ export default {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-  ]
+  ],
 }
